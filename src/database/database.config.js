@@ -4,10 +4,10 @@ const dotenv =require('dotenv')
 dotenv.config();
 
 const config = {
-    server: process.env.SERVER,
-    database: process.env.DATABASE,
-    user: process.env.USER, 
-    password: process.env.PASSWORD,
+    server: '97.74.83.13',
+    database: 'dev.shatechno',
+    user: 'dev.shatechno', 
+    password:'7!jYo787n' ,
     options: {
         trustedConnection: false,
         enableArithAbort: true,
