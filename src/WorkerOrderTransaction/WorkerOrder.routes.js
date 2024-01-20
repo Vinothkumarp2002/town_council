@@ -11,7 +11,7 @@ router.get('/workOrderTransaction',getAllWorkOrderTransaction);
 
 router.post('/image',createImageTransaction);
 
-routet.get('/image',getAllWorkOrder);
+router.get('/image',getAllWorkOrder);
 
 
 
