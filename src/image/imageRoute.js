@@ -86,7 +86,7 @@ router.post('/upload', upload.array('photos'), async (req, res) => {
         }
       }
   
-      res.json({ success: 1, images: uploadedImages });
+      res.json({ success: 1,message: "Image Uploaded", data: uploadedImages});
     } catch (error) {
       res.status(500).json({ success: 0, error: 'Internal Server Error' });
     }

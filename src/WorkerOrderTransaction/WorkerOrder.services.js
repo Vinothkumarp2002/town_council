@@ -33,7 +33,7 @@ module.exports = {
 
       query = "insert into workOrderImage (ImagePath, WorkOrderId, StartTime) values " +
         data.image.map(function (x) {
-          return "('" + x.path + "'," + workID +",'"+x.time +"')";
+          return "('" + x.url + "'," + workID +",'"+x.time +"')";
         }).join(", ");
       await request.query(query);
 
