@@ -18,7 +18,11 @@ app.use(body_parser.json())
 
 
 
-
+app.get('/',(req,res)=>{
+    res.json({
+        message:"home"
+    })
+})
 
 app.use('/user',userRoutes);
 app.use('/img', imageRoute);
@@ -26,7 +30,7 @@ app.use('/workTransaction',workOrderTransaction);
 
 
 
-const port = process.env.PORT;
+const port = 3000;
 
 app.listen(port,()=>{
     console.log(`server is running on port ${port}`)
